@@ -7,11 +7,12 @@
 <link href="assets/css/style.css" rel="stylesheet" media="screen" />
 <script src="assets/js/lib/jquery-1.7.2.min.js"></script>
 <script src="assets/js/lib/jquery.mobile-1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<script src="assets/js/app.js"></script>
 </head>
 
 <body>
 <div id="wrapper" align="center">
-<!-- Start of first page -->
+<!-- Start of menu page -->
 <div data-role="page" data-theme="a" data-content-theme="a" id="menu">
 
 	<div data-role="header">
@@ -19,9 +20,44 @@
 	</div><!-- /header -->
 
 	<div data-role="content">	
-		<a data-role="button" data-theme="c" href="#app">Start Game</a>
-        <a data-role="button" data-theme="c">Quit</a>
-        <a data-role="button" data-theme="c">More</a>
+		<a data-role="button" data-theme="c" data-icon="arrow-r" href="#app" onclick="init();">Start Game</a>
+        <a data-role="button" data-theme="c" data-icon="delete">Quit</a>
+        <a data-role="button" data-theme="c" data-icon="gear">More</a>
+        <div class="ads">
+        <h1>&lt;Ads go here&gt;</h1>
+        </div>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<a data-role="button" data-theme="b" href="http://greensqr.com">greensqr.com</a>
+	</div><!-- /footer -->
+</div><!-- /page -->
+<!-- Start of app page -->
+<div data-role="page" data-theme="a" data-content-theme="a" id="app">
+
+	<div data-role="header">
+		<h1>Blocks</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+    	<div class="ui-grid-c">
+        	<div class="ui-block-a"><a data-role="button" data-theme="c" data-inline="true" data-iconpos="notext"></a></div>
+			<div class="ui-block-b"><a data-role="button" data-theme="c" data-inline="true" data-iconpos="notext"></a></div>
+			<div class="ui-block-c"><a data-role="button" data-theme="c" data-inline="true" data-iconpos="notext"></a></div>
+			<div class="ui-block-d"><a data-role="button" data-theme="c" data-inline="true" data-iconpos="notext"></a></div>
+            <div class="ui-block-a"><a data-role="button" data-theme="c" data-inline="true" data-iconpos="notext"></a></div>
+			<div class="ui-block-b"><a data-role="button" data-theme="c" data-inline="true" data-iconpos="notext"></a></div>
+			<div class="ui-block-c"><a data-role="button" data-theme="c" data-inline="true" data-iconpos="notext"></a></div>
+			<div class="ui-block-d"><a data-role="button" data-theme="c" data-inline="true" data-iconpos="notext"></a></div>
+            <div class="ui-block-a"><a data-role="button" data-theme="c" data-inline="true" data-iconpos="notext"></a></div>
+			<div class="ui-block-b"><a data-role="button" data-theme="c" data-inline="true" data-iconpos="notext"></a></div>
+			<div class="ui-block-c"><a data-role="button" data-theme="c" data-inline="true" data-iconpos="notext"></a></div>
+			<div class="ui-block-d"><a data-role="button" data-theme="c" data-inline="true" data-iconpos="notext"></a></div>
+            <div class="ui-block-a"><a data-role="button" data-theme="c" data-inline="true" data-iconpos="notext"></a></div>
+			<div class="ui-block-b"><a data-role="button" data-theme="c" data-inline="true" data-iconpos="notext"></a></div>
+			<div class="ui-block-c"><a data-role="button" data-theme="c" data-inline="true" data-iconpos="notext"></a></div>
+			<div class="ui-block-d"><a data-role="button" data-theme="c" data-inline="true" data-iconpos="notext"></a></div>
+        </div><!-- /grid-c -->
         <div class="ads">
         <h1>&lt;Ads go here&gt;</h1>
         </div>
